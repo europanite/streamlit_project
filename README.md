@@ -1,5 +1,7 @@
 # [streamlit_project](https://github.com/europanite/streamlit_project "streamlit_project")
 
+!["web_ui"](./assets/images/web_ui.png)
+
 ## Requirements
 
 - Docker

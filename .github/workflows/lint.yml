@@ -1,0 +1,24 @@
+name: Python Lint
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Build test image
+        run: docker compose -f docker-compose.test.yml build
+
+      - name: Ruff
+        run: |
+          docker compose -f docker-compose.test.yml run --rm --entrypoint /bin/sh service_test -lc '
+            ruff check /app /tests
+          '

@@ -1,0 +1,26 @@
+name: Pytest
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  tests:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Build test image
+        run: docker compose -f docker-compose.test.yml build
+
+      - name: Run pytest
+        run: docker compose -f docker-compose.test.yml run --rm service_test

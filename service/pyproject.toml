@@ -1,0 +1,21 @@
+[project]
+name = "streamlit-csv-explorer"
+version = "0.1.0"
+description = "A Docker Compose based Streamlit CSV explorer."
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = []
+
+[tool.coverage.run]
+branch = true
+source = ["/app"]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true

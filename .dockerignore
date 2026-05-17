@@ -1,0 +1,47 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Logs / temp
+*.log
+*.tmp
+*.swp
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Docker specific
+.dockerignore
+docker-compose.override.yml
+
+# Local config
+.env
+.env.*
+!env.example
+
+# Build artifacts
+*.egg-info/
+.eggs/
+dist/
+build/
+.coverage
+.pytest_cache/
+.ruff_cache/
+service/reports/

@@ -1,0 +1,16 @@
+services:
+  service_test:
+    build:
+      context: ./service/
+      dockerfile: Dockerfile.test
+    image: streamlit-csv-explorer-test:local
+    environment:
+      PYTHONPATH: /
+    tty: false
+    restart: no
+    volumes:
+      - ./service/app:/app
+      - ./service/data:/data
+      - ./service/tests:/tests
+      - ./service/reports:/reports
+    command: ["pytest", "-q"]

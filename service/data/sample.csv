@@ -1,0 +1,7 @@
+date,region,product,units,revenue,customer_type
+2026-01-01,A,Standard,12,36000,new
+2026-01-02,A,Premium,5,40000,returning
+2026-01-03,B,Standard,9,27000,new
+2026-01-04,B,Premium,7,56000,returning
+2026-01-05,C,Standard,15,45000,new
+2026-01-06,C,Premium,4,32000,returning

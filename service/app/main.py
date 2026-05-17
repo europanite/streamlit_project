@@ -1,12 +1,11 @@
 from __future__ import annotations
 
+from collections.abc import Iterable
 from dataclasses import dataclass
 from io import StringIO
 from pathlib import Path
-from typing import Iterable
 
 import pandas as pd
-
 
 SAMPLE_CSV_PATH = Path("/data/sample.csv")
 

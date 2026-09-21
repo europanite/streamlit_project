@@ -1,7 +1,7 @@
 # [streamlit_project](https://github.com/europanite/streamlit_project "streamlit_project")
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Python](https://img.shields.io/badge/python-3.9|%203.10%20|%203.11|%203.12|%203.13|%203.14-blue)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3.10%20|%203.11|%203.12|%203.13|%203.14-blue)](https://www.python.org/)
 ![OS](https://img.shields.io/badge/OS-Linux%20%7C%20macOS%20%7C%20Windows-blue)
 
 
@@ -50,3 +50,8 @@ docker compose -f docker-compose.test.yml run --rm --entrypoint /bin/sh service_
 ```bash
 docker compose run --rm --entrypoint /bin/sh service
 ```
+
+---
+
+# License
+- Apache License 2.0

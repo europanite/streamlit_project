@@ -1,5 +1,5 @@
 title: "streamlit_project"
-description: "Python environment built with Docker Compose"
+description: "streamlit project with Docker Compose"
 baseurl: "/streamlit_project"
 url: "https://europanite.github.io"
 theme: minima

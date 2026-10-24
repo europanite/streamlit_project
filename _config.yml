@@ -1,6 +1,6 @@
-title: "streamlit_project"
+title: "streamlit-project"
 description: "streamlit project with Docker Compose"
-baseurl: "/streamlit_project"
+baseurl: "/streamlit-project"
 url: "https://europanite.github.io"
 theme: minima
 markdown: kramdown
